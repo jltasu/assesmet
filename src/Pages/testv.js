@@ -1,9 +1,12 @@
 import React from 'react';
 import ImageHeader from '../Pages/imagenes/hero_1.jpg'
+import Header from '../Components/header';
+import Footer from '../Components/footer';
 
 const Testv = () => {
     return (
         <div>
+            <Header />
             <div className="site-wrap" id="home-section">
                 <div className="site-mobile-menu site-navbar-target">
                     <div className="site-mobile-menu-header">
@@ -26,6 +29,7 @@ const Testv = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

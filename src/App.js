@@ -1,8 +1,6 @@
 import React from 'react'
 import { Switch, Route, withRouter } from 'react-router-dom'
 import Contact from './Pages/contact'
-import Footer from './Components/footer'
-import Header from './Components/header'
 import Principal from './Pages/principal'
 import Error404 from './Components/404/404'
 import Register from './Pages/register'
@@ -10,11 +8,12 @@ import Login from './Pages/login'
 import Testv from './Pages/testv'
 import Careers from './Pages/careers'
 import '../src/App.css'
+import ResumePage from './Asessments/resume'
+import WelcomePage from './Asessments/welcome'
 
 const App = () => {
     const body = (
         <React.Fragment>
-            <Header />
             <div id="body">
                 <Switch>
                     <Route exact path='/'>
@@ -37,11 +36,14 @@ const App = () => {
                             <Contact />
                         )
                     }} />
+                    <Route exact path='/asessments/welcome'>
+                        <WelcomePage />
+                    </Route>
+                    <Route exact path='/asessments/resume'>
+                        <ResumePage />
+                    </Route>
                     <Route component={Error404} />
                 </Switch>
-            </div>
-            <div id='footer'>
-                <Footer></Footer>
             </div>
         </React.Fragment>
     )

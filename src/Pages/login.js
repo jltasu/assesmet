@@ -2,10 +2,13 @@ import React from 'react';
 import ImageHeader from '../Pages/imagenes/banner.jpg'
 import LoginForm from './form-login';
 import { Card } from 'antd';
+import Header from '../Components/header';
+import Footer from '../Components/footer';
 
 const Login = () => {
     return (
         <div>
+            <Header />
             <div className="site-wrap" id="home-section">
                 <div className="site-mobile-menu site-navbar-target">
                     <div className="site-mobile-menu-header">
@@ -41,6 +44,7 @@ const Login = () => {
                     </div>
                 </div>
               </div>
+              <Footer />
             </div>
   );
 };

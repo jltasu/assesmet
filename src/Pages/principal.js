@@ -1,9 +1,12 @@
 import React from "react";
 import ImageHeader from '../Pages/imagenes/hero_1.jpg'
+import Header from "../Components/header";
+import Footer from "../Components/footer";
 
 const Principal = () => {
     return (
       <div>
+          <Header />
           <div className="site-wrap" id="home-section">
             <div className="site-mobile-menu site-navbar-target">
               <div className="site-mobile-menu-header">
@@ -214,21 +217,7 @@ const Principal = () => {
               </div>
             </div>
           </div>
-          <script src="js/jquery-3.3.1.min.js" type="44bcf6ecc84568d1bf8bf9de-text/javascript"></script>
-          <script src="js/popper.min.js" type="44bcf6ecc84568d1bf8bf9de-text/javascript"></script>
-          <script src="js/bootstrap.min.js" type="44bcf6ecc84568d1bf8bf9de-text/javascript"></script>
-          <script src="js/owl.carousel.min.js" type="44bcf6ecc84568d1bf8bf9de-text/javascript"></script>
-          <script src="js/jquery.sticky.js" type="44bcf6ecc84568d1bf8bf9de-text/javascript"></script>
-          <script src="js/jquery.waypoints.min.js" type="44bcf6ecc84568d1bf8bf9de-text/javascript"></script>
-          <script src="js/jquery.animateNumber.min.js" type="44bcf6ecc84568d1bf8bf9de-text/javascript"></script>
-          <script src="js/jquery.fancybox.min.js" type="44bcf6ecc84568d1bf8bf9de-text/javascript"></script>
-          <script src="js/jquery.easing.1.3.js" type="44bcf6ecc84568d1bf8bf9de-text/javascript"></script>
-          <script src="js/aos.js" type="44bcf6ecc84568d1bf8bf9de-text/javascript"></script>
-          <script src="js/main.js" type="44bcf6ecc84568d1bf8bf9de-text/javascript"></script>
-
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="44bcf6ecc84568d1bf8bf9de-text/javascript"></script>
-
-          <script src="../../../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="44bcf6ecc84568d1bf8bf9de-|49" defer=""></script>
+          <Footer />
       </div>
     );
 }
