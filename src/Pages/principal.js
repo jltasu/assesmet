@@ -234,5 +234,4 @@ const Principal = () => {
       </div>
     );
 }
-
 export default Principal;
