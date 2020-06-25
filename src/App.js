@@ -9,6 +9,7 @@ import Register from './Pages/register'
 import Login from './Pages/login'
 import Testv from './Pages/testv'
 import Careers from './Pages/careers'
+import '../src/App.css'
 
 const App = () => {
     const body = (

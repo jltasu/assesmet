@@ -1,6 +1,4 @@
 import React from "react";
-import Header from '../Components/header'
-import Footer from '../Components/footer'
 import ImageHeader from '../Pages/imagenes/hero_1.jpg'
 
 const Principal = () => {

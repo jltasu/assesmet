@@ -1,5 +1,7 @@
 import React from 'react';
-import ImageHeader from '../Pages/imagenes/hero_1.jpg'
+import ImageHeader from '../Pages/imagenes/banner.jpg'
+import LoginForm from './form-login';
+import { Card } from 'antd';
 
 const Login = () => {
     return (
@@ -16,10 +18,23 @@ const Login = () => {
                 <div className="ftco-blocks-cover-1">
                     <div className="ftco-cover-1 overlay" style={{ backgroundImage: `url(${ImageHeader})` }}>
                         <div className="container">
-                            <div className="row align-items-center justify-content-center">
-                                <div className="col-lg-6 text-center">
-                                    <h1>Pantalla de Iniciar Sesion</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div className="row right">
+                            <div className="col-lg-6 text-center" style={{paddingTop: 180}}>
+                                    <Card
+                                    hoverable="true"
+                                    bordered={false}
+                                    cover="Iniciar Sesión"
+                                    title="  " 
+                                    className="mb-4" 
+                                    style={{ width: 420, 
+                                            height: 400, 
+                                            opacity: 4, 
+                                            backgroundColor: 'rgba(245, 245, 245, 0.88)',
+                                            borderRadius: 12,
+                                            fontSize: 25
+                                            }}>
+                                        <LoginForm></LoginForm>
+                                    </Card>
                                 </div>
                             </div>
                         </div>
