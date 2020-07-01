@@ -21,7 +21,7 @@ const Chart = () => {
     chort();
   }, []);
   return (
-    <div styles= {Tex}> 
+    <div> 
       <div>
         <Radar data={chartData} />
       </div>
