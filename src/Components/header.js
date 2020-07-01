@@ -9,9 +9,11 @@ const Header = () => {
                     <div className="col-lg-4">
                         <nav className="site-navigation text-right ml-auto " role="navigation">
                             <ul className="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                                <li className="active"><Link className="nav-link" to='/'>Inicio</Link></li>
+                            {/* className="active"  estilo rojito del boton inicio*/}
+                                <li ><Link className="nav-link" to='/'>Inicio</Link></li>
                                 <li><Link className="nav-link" to='/test-vocacional'>Test vocacional</Link></li>
                                 <li><Link className="nav-link" to='/carreras'>Carreras</Link></li>
+                                <li><Link className="nav-link" to='/grafico'>chart</Link></li>
                             </ul>
                         </nav>
                     </div>

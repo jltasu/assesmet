@@ -10,6 +10,7 @@ import Careers from './Pages/careers'
 import '../src/App.css'
 import ResumePage from './Asessments/resume'
 import WelcomePage from './Asessments/welcome'
+import Grafico from './Pages/grafico'
 
 const App = () => {
     const body = (
@@ -28,8 +29,11 @@ const App = () => {
                     <Route exact path='/test-vocacional'>
                         <Testv />
                     </Route>
-                    <Route exact path='/carreras'>
+                    <Route exact path='/carreras1'>
                         <Careers />
+                    </Route>
+                    <Route exact path='/grafico'>
+                        <Grafico />
                     </Route>
                     <Route exact path='/contact' render={() => {
                         return (

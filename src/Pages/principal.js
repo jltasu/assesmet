@@ -22,7 +22,7 @@ const Principal = () => {
                   <div className="row align-items-center justify-content-center">
                     <div className="col-lg-6 text-center">
                       <h1>Descubre tu vocacion y potencial</h1>
-                      <p>Te acompañamos en el proceso, con el fin de darte la mejos visión para un futuro exitoso</p>
+                      <p>Te acompañamos en el proceso, con el fin de darte la mejor visión para un futuro exitoso</p>
                     </div>
                   </div>
                 </div>
@@ -32,7 +32,7 @@ const Principal = () => {
               <div className="row justify-content-center text-center mb-5">
                 <div className="col-md-6">
                   <span className="text-primary">Explora tu vocación</span>
-                  <h2 className="mb-4">porque TÚ eres nuestra prioridad</h2>
+                  <h2 className="mb-4">Porque TÚ eres nuestra prioridad</h2>
                   <p> Antes de empezar debes conocer los tres aspectos que te ayudaran a descubrir tu vocación</p>
                 </div>
               </div>
