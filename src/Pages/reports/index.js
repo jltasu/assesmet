@@ -4,6 +4,9 @@ import Footer from "../../Components/footer"
 import { Layout, Tabs } from 'antd';
 import ResumePage from "../../Asessments/resume";
 import ImageHeader from '../imagenes/bannerimages.jpg'
+import Chart2 from "../../Components/chart2";
+import Barritas from "../../Components/barritas";
+import Bubble from "../../Components/bubble";
 const { TabPane } = Tabs;
 
 
@@ -20,13 +23,14 @@ const Reportes = () => {
                         <Chart></Chart>
                     </TabPane>
                     <TabPane tab="Intereses" key="2">
-                        Content of Tab Pane 2
+                    <Barritas></Barritas>
                     </TabPane>
                     <TabPane tab="Habilidades" key="3">
-                        Content of Tab Pane 3
+                        
+                        <Chart2></Chart2>
                     </TabPane>
                     <TabPane tab="Personalidad" key="4">
-                        Content of Tab Pane 4
+                        <Bubble></Bubble>
                     </TabPane>
                 </Tabs>
             </div>
