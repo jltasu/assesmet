@@ -1,11 +1,22 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Form, Input, Button, Checkbox } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
+import { Redirect } from "react-router-dom";
 
 const LoginForm = () => {
+    const [button, setButton] = useState(false)
     const onFinish = values => {
-        console.log(values)
+        if(values != null){
+            setButton(true);
+        }else{
+            setButton(false)
+        }
     }
+
+    if(button){
+        return <Redirect to='/asessments/welcome'></Redirect>
+    }
+
     return (
         <Form
             name="form_login"
