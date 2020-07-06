@@ -13,7 +13,6 @@ const Header = () => {
                                 <li ><Link className="nav-link" to='/'>Inicio</Link></li>
                                 <li><Link className="nav-link" to='/test-vocacional'>Test vocacional</Link></li>
                                 <li><Link className="nav-link" to='/carreras'>Carreras</Link></li>
-                                <li><Link className="nav-link" to='/grafico'>chart</Link></li>
                             </ul>
                         </nav>
                     </div>
@@ -24,11 +23,10 @@ const Header = () => {
                         <div className="ml-auto toggle-button d-inline-block d-lg-none"><a href="#" className="site-menu-toggle py-5 js-menu-toggle text-white"><span className="icon-menu h3 text-white"></span></a></div>
                     </div>
                     <div className="col-lg-4">
-
                         <nav className="site-navigation text-left mr-auto " role="navigation">
                             <ul className="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                                <li><Link to='/contact'>Contactar</Link></li>
-                                <li><Link to='/login'>Iniciar Sesión</Link></li>
+                                <li><Link className="nav-link" to='/contact'>Contactar</Link></li>
+                                <li><Link className="nav-link" to='/login'>Iniciar Sesión</Link></li>
                             </ul>
                         </nav>
                     </div>

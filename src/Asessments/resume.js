@@ -1,12 +1,11 @@
 import React from 'react'
 import { Layout } from 'antd';
-import ImageHeader from '../Pages/imagenes/hero_1.jpg'
 import HeaderAssesment from '../Components/headerAssesment';
 
-const ResumePage = () => {
+const ResumePage = ({title, img}) => {
     return (
         <Layout className="layout">
-            <HeaderAssesment></HeaderAssesment>
+            <HeaderAssesment title={title}></HeaderAssesment>
             <div class="site-wrap" id="home-section">
                 <div class="site-mobile-menu site-navbar-target">
                     <div class="site-mobile-menu-header">
@@ -17,7 +16,7 @@ const ResumePage = () => {
                     <div class="site-mobile-menu-body" ></div>
                 </div>
             </div>
-            <div style={{height: 280, backgroundColor:'red', backgroundImage: `url(${ImageHeader})`}}></div>
+            <div className="ftco-cover-4 overlay" style={{backgroundImage: `url(${img})`}}></div>
         </Layout>
     )
 }

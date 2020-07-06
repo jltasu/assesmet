@@ -10,7 +10,9 @@ import Careers from './Pages/careers'
 import '../src/App.css'
 import ResumePage from './Asessments/resume'
 import WelcomePage from './Asessments/welcome'
-import Grafico from './Pages/grafico'
+import Reportes from './Pages/reports/index'
+import Explorer from './Pages/explore/index'
+import Contactar from './Pages/contact/index'
 
 const App = () => {
     const body = (
@@ -32,19 +34,25 @@ const App = () => {
                     <Route exact path='/carreras1'>
                         <Careers />
                     </Route>
-                    <Route exact path='/grafico'>
-                        <Grafico />
-                    </Route>
                     <Route exact path='/contact' render={() => {
                         return (
                             <Contact />
                         )
                     }} />
+                    <Route exact path='/asessments/reports'>
+                        <Reportes />
+                    </Route>
                     <Route exact path='/asessments/welcome'>
                         <WelcomePage />
                     </Route>
                     <Route exact path='/asessments/resume'>
                         <ResumePage />
+                    </Route>
+                    <Route exact path='/asessments/explore'>
+                        <Explorer />
+                    </Route>
+                    <Route exact path='/asessments/contact'>
+                        <Contactar />
                     </Route>
                     <Route component={Error404} />
                 </Switch>

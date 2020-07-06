@@ -21,10 +21,7 @@ const Chart = () => {
     chort();
   }, []);
   return (
-    <div> 
-      <div>
-        <Radar data={chartData} />
-      </div>
+    <div style={{padding: '2rem'}}> 
       <div >
         <h2>
           <font styles="vertical-align: inherit;">
@@ -33,12 +30,9 @@ const Chart = () => {
             </font>
           </font>
         </h2>
-        <p>
-          <img
-            src="https://d5lqosquewn6c.cloudfront.net/static/reports/compiled/images/fake-text-short.svg"
-            class="ReportPlaceholderCopy"
-          />
-        </p>
+        <div>
+        <Radar data={chartData} />
+      </div>
         <h2>
           <font styles="vertical-align: inherit;">
             <font styles="vertical-align: inherit;">
@@ -49,7 +43,7 @@ const Chart = () => {
         <p>
           <img
             src="https://d5lqosquewn6c.cloudfront.net/static/reports/compiled/images/fake-text-short.svg"
-            class="ReportPlaceholderCopy"
+            className="ReportPlaceholderCopy"
           />
         </p>
       </div>

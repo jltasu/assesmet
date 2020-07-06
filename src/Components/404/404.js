@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Header from '../header'
-import ImageHeader from '../../Pages/imagenes/hero_1.jpg'
+import ImageHeader from '../../Pages/imagenes/404.jpg'
 const Error404 = () => {
     return (
         <div>
@@ -22,8 +22,6 @@ const Error404 = () => {
                     <div class="container">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-lg-6 text-center">
-                                <h1>404</h1>
-                                <p>Pagina no encontrada</p>
                             </div>
                         </div>
                     </div>
