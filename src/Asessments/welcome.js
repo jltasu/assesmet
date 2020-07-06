@@ -38,7 +38,7 @@ const WelcomePage = () => {
                             <a style={{ fontSize: 20 }} className="text-white">Bienvenido a Vocacional Explorer</a>
                         </div>
                         <div style={{ paddingTop: 20, paddingBottom: 40 }}>
-                            <Button type="primary" style={{ width: 450, height: 60, borderRadius: 9, fontSize: 25, fontWeight: 'bold' }}>Iniciar ahora</Button>
+                            <Button type="primary" style={{ width: 450, height: 60, borderRadius: 9, fontSize: 25, fontWeight: 'bold' }}><Link to='/asessments/exam'>Iniciar ahora</Link></Button>
                         </div>
                         <div>
                             <a className="text-white" style={{ fontSize: 20 }}>Aprenda más ...</a>

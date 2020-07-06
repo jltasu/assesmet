@@ -13,6 +13,7 @@ import WelcomePage from './Asessments/welcome'
 import Reportes from './Pages/reports/index'
 import Explorer from './Pages/explore/index'
 import Contactar from './Pages/contact/index'
+import Asessment from './Asessments/test/test'
 
 const App = () => {
     const body = (
@@ -41,6 +42,9 @@ const App = () => {
                     }} />
                     <Route exact path='/asessments/reports'>
                         <Reportes />
+                    </Route>
+                    <Route exact path='/asessments/exam'>
+                        <Asessment />
                     </Route>
                     <Route exact path='/asessments/welcome'>
                         <WelcomePage />
