@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import { Switch, Route, withRouter } from 'react-router-dom'
 import Contact from './Pages/contact'
 import Principal from './Pages/principal'
@@ -14,6 +14,8 @@ import Reportes from './Pages/reports/index'
 import Explorer from './Pages/explore/index'
 import Contactar from './Pages/contact/index'
 import Asessment from './Asessments/test/test'
+
+const renderLoader = () => <p>Loadings</p>;
 
 const App = () => {
     const body = (

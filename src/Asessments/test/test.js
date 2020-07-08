@@ -585,7 +585,7 @@ class Asessment extends React.Component {
         return (
         <div>
             <ResumePage title={"Realizar Test"} img={ImageHeader}></ResumePage>
-            <div className="container" style={{paddingTop: 20}}>
+            <div className="container" style={{paddingTop: 20, paddingBottom: 25}}>
                 <Survey.Survey model={model}></Survey.Survey>
             </div>
             <Footer />

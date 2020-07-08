@@ -12,13 +12,11 @@ const Footer = () => {
                                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
                             </div>
                             <div className="col-md-4 ml-auto">
-                                <h2 className="footer-heading mb-4">Features</h2>
+                                <h2 className="footer-heading mb-4">Caracteristicas</h2>
                                 <ul className="list-unstyled">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Terms of Service</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Terminos y Condiciones</a></li>
+                                    <li><a href="#">Privacidad</a></li>
+                                    <li><a href="#">Contáctanos</a></li>
                                 </ul>
                             </div>
                         </div>
