@@ -1,7 +1,7 @@
 import React from "react";
 import Chart from "../../Components/chart";
 import Footer from "../../Components/footer"
-import { Layout, Tabs } from 'antd';
+import { Layout, Tabs, Skeleton } from 'antd';
 import ResumePage from "../../Asessments/resume";
 import ImageHeader from '../imagenes/bannerimages.jpg'
 import Chart2 from "../../Components/chart2";
@@ -17,10 +17,10 @@ const Reportes = () => {
             <Layout>
                 <ResumePage title={'Mis Reportes Personalizados'} img={ImageHeader}/>
             </Layout>
-            <div className="container">
+            <div className="container" style={{paddingBottom: 12}}>
                 <Tabs defaultActiveKey="1" centered size={'large'}>
                     <TabPane tab="Resumen" key="1">
-                        <Chart></Chart>
+                        <Skeleton active />
                     </TabPane>
                     <TabPane tab="Intereses" key="2">
                     <Barritas></Barritas>

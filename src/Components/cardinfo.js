@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
-const CardInfo = ({image, title, description}) => {
+const CardInfo = ({ image, title, description }) => {
     return (
         <div className="col-sm-4">
             <div className="list-item list-overlay r mb-3">
@@ -15,7 +16,7 @@ const CardInfo = ({image, title, description}) => {
                     <div className="list-body">
                         <a
                             className="list-title title ajax h4 font-weight-bold"
-                        > {title} </a>
+                        ><Link to='/asessments/career' style={{color: 'white'}}>{title}</Link></a>
                         <a className="list-subtitle d-block text-muted subtitle ajax h-1x"
                         >{description}</a>
                     </div>

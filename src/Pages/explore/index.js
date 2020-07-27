@@ -3,11 +3,9 @@ import { Layout, Tabs } from 'antd';
 import ResumePage from "../../Asessments/resume";
 import ImageHeader from '../imagenes/studying.jpg'
 import Footer from "../../Components/footer"
-import ImageGap from '../imagenes/gap2.jpg';
 import Ambiental from '../imagenes/ambiental.jpg';
 import Civil from '../imagenes/civil.jpg';
 import Sistemas from '../imagenes/sistemas.jpg';
-import ImageGaps from '../imagenes/gaps.jpg';
 import CardInfo from '../../Components/cardinfo';
 import { Divider } from 'antd';
 

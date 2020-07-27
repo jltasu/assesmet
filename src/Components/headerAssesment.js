@@ -1,9 +1,42 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Avatar } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
+import { Avatar, Dropdown, Menu } from 'antd';
+
+var AmazonCognitoIdentity = require('amazon-cognito-identity-js');
+
+
+const menu = (
+    <Menu>
+      <Menu.Item>
+        <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
+          Perfil
+        </a>
+      </Menu.Item>
+      <Menu.Item>
+        <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
+          Configuración
+        </a>
+      </Menu.Item>
+      <Menu.Item danger>Cerrar Sesion</Menu.Item>
+    </Menu>
+);
 
 const HeaderAssesment = ({ title }) => {
+
+    const poolData = {  
+        UserPoolId: 'us-east-2_ZR6tA3cBm',
+        ClientId: '3s8ll3pc36qpkki11njbd7pb05'
+    }    
+
+    var userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
+
+    var userData = {
+        Username: 'jenson@upeu.edu.pe',
+        Pool: userPool,
+    };
+
+    var cognitoUser = new AmazonCognitoIdentity.CognitoUser(userData);
+
     return (
         <header className="site-navbar site-navbar-target" role="banner">
             <div className="container">
@@ -24,7 +57,7 @@ const HeaderAssesment = ({ title }) => {
                         </nav>
                     </div>
                     <div className="col-lg-4 text-right">
-                        <Avatar size={40}>DANIEL</Avatar>
+                        <Dropdown overlay={menu}><Avatar draggable={true} size={40} onClick={e => e.preventDefault()}>DANIEL</Avatar></Dropdown>
                     </div>
                 </div>
                 <div>

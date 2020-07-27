@@ -27,7 +27,7 @@ const Login = () => {
                                     hoverable="true"
                                     bordered={false}
                                     cover="Iniciar Sesión"
-                                    title="  " 
+                                    title="  "
                                     className="mb-4" 
                                     style={{ width: 420, 
                                             height: 400, 
@@ -36,7 +36,7 @@ const Login = () => {
                                             borderRadius: 12,
                                             fontSize: 25
                                             }}>
-                                        <LoginForm></LoginForm>
+                                        <LoginForm />
                                     </Card>
                                 </div>
                             </div>

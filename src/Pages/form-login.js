@@ -1,20 +1,18 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { Form, Input, Button, Checkbox } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
-import { Redirect } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
+import { connect } from 'react-redux';
+import { login } from '../actions/auth'
 
-const LoginForm = () => {
-    const [button, setButton] = useState(false)
-    const onFinish = values => {
-        if(values != null){
-            setButton(true);
-        }else{
-            setButton(false)
-        }
+const LoginForm = ({ isAuthenticated, login }) => {
+
+    if(isAuthenticated){
+        return <Redirect to="/asessments/welcome"></Redirect>
     }
-
-    if(button){
-        return <Redirect to='/asessments/welcome'></Redirect>
+ 
+    const onFinish = values => {
+        login(values.email, values.password)
     }
 
     return (
@@ -27,7 +25,7 @@ const LoginForm = () => {
             onFinish={onFinish}
         >
             <Form.Item
-                name="Correo Electronico"
+                name="email"
                 rules={[
                     {
                         required: true,
@@ -60,9 +58,7 @@ const LoginForm = () => {
                 <Form.Item name="remember" valuePropName="checked" noStyle >
                     <Checkbox>Recordarme</Checkbox>
                 </Form.Item>
-                <a className="login-form-forgot" href="" >
-                    ¿Olvidaste tu contraseña?
-        </a>
+                <a className="login-form-forgot"><Link to="/forget-password">¿Olvidaste tu contraseña?</Link></a>
             </Form.Item>
             <Form.Item>
                 <Button type="danger" htmlType="submit" className="login-form-button" style={{ borderRadius: 6 }} >
@@ -73,4 +69,14 @@ const LoginForm = () => {
     )
 }
 
-export default LoginForm
+const mapStateToProps = state => ({
+    isAuthenticated: state.auth.isAuthenticated
+})
+
+const mapDispatchToProps = dispatch => {
+    return {
+        login: (username, password) => dispatch(login(username, password))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(LoginForm)

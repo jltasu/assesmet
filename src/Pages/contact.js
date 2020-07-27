@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ImageHeader from "../Pages/imagenes/hero_1.jpg";
 import Header from "../Components/header";
 import Footer from "../Components/footer";
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { getLeads } from '../actions/lead';
 
-const Contact = () => {
+const Contact = ({ getLeads, leads }) => {
+
+    useEffect(() => {
+        getLeads()
+    }, [getLeads])
+
+    console.log(leads)
+
     return (
         <div>
             <Header />
@@ -80,4 +90,14 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+const mapStateToProps = state => ({
+    leads: state.leads.leads,
+})
+
+const mapDispatchToProps = distpatch => {
+    return {
+        getLeads: () => distpatch(getLeads())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Contact);
