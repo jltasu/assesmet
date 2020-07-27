@@ -73,14 +73,14 @@ const App = () => {
                                 <Contact />
                             )
                         }} />
-                        <Route exact path='/asessments/reports' component={Reportes} />
-                        <Route exact path='/asessments/exam' component={Asessment} />
-                        <Route exact path='/asessments/welcome' component={WelcomePage} />
-                        <Route exact path='/asessments/resume' component={ResumePage} />
-                        <Route exact path='/asessments/explore' component={Explorer} />
-                        <Route exact path='/asessments/career' component={Career} />
-                        <Route exact path='/asessments/contact' component={Contactar} />
-                        <Route exact path='/contact/profile' component={ProfileContact} />
+                        <PrivateRoute exact path='/asessments/reports' component={Reportes} />
+                        <PrivateRoute exact path='/asessments/exam' component={Asessment} />
+                        <PrivateRoute exact path='/asessments/welcome' component={WelcomePage} />
+                        <PrivateRoute exact path='/asessments/resume' component={ResumePage} />
+                        <PrivateRoute exact path='/asessments/explore' component={Explorer} />
+                        <PrivateRoute exact path='/asessments/career' component={Career} />
+                        <PrivateRoute exact path='/asessments/contact' component={Contactar} />
+                        <PrivateRoute exact path='/contact/profile' component={ProfileContact} />
                         <Route component={Error404} />
                     </Switch>
                 </Suspense>
