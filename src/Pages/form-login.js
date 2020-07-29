@@ -61,10 +61,9 @@ const LoginForm = ({ isAuthenticated, login }) => {
                 <a className="login-form-forgot"><Link to="/forget-password">¿Olvidaste tu contraseña?</Link></a>
             </Form.Item>
             <Form.Item>
-                <Button type="danger" htmlType="submit" className="login-form-button" style={{ borderRadius: 6 }} >
-                    Ingresar
-        </Button>
+                <Button type="danger" htmlType="submit" className="login-form-button" style={{ borderRadius: 6 }} >Ingresar</Button>
             </Form.Item>
+            <b><a className="login-form-forgot"><Link to="/register">¿Aún no tienes una cuenta? ¡Registrate!</Link></a></b>
         </Form>
     )
 }

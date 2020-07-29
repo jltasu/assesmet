@@ -4,8 +4,10 @@ import ReactInputVerificationCode from 'react-input-verification-code';
 
 var AmazonCognitoIdentity = require('amazon-cognito-identity-js');
 
-const ValidationForm = () => {
+const ValidationForm = (props) => {
 
+    const authResult = new URLSearchParams(window.location.search);
+    const code = authResult.get('code')
 
     const [kill, setKill] = useState()
 
@@ -33,6 +35,8 @@ const ValidationForm = () => {
             });
         }
     }
+
+    console.log(props)
 
     return (
         <ReactInputVerificationCode type="number" 

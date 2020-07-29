@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Form, Input, Button, Checkbox } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
-import { CognitoUserPool } from 'amazon-cognito-identity-js'
-
+import { CognitoUserPool } from 'amazon-cognito-identity-js';
+import { Redirect } from 'react-router-dom';
 
 var AmazonCognitoIdentity = require('amazon-cognito-identity-js');
 
 const RegisterForm = () => {
+
+    const [confirmed, setConfirmed] = useState(false);
+
     const poolData = {
         UserPoolId: 'us-east-2_ZR6tA3cBm',
         ClientId: '3s8ll3pc36qpkki11njbd7pb05'
@@ -69,8 +72,6 @@ const RegisterForm = () => {
         attributeList.push(attributeSchool);
         attributeList.push(attributeCity);
 
-        console.log(attributeList);
-
         UserPool.signUp(
             values.email, 
             values.password,
@@ -78,8 +79,15 @@ const RegisterForm = () => {
             null,
             (err, data) => {
             if(err) console.log(err);
-            console.log(data)
+            console.log(data.userConfirmed)
+            if(data.userConfirmed != true){
+                setConfirmed(false)
+            }
         })
+    }
+
+    if (confirmed == false){
+        return <Redirect to='validator/Diegogo'></Redirect>
     }
 
     return (

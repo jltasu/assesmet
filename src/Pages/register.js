@@ -41,21 +41,6 @@ const Register = () => {
                                             fontSize: 25
                                         }}>
                                         <RegisterForm />
-                                        <Button type="primary" onClick={() => setModal(true)}>
-                                            Vertically centered modal dialog
-            </Button>
-                                        <Modal
-                                            title="Vertically centered modal dialog"
-                                            centered
-                                            visible={modal}
-                                            onOk={() => setModal(false)}
-                                            onCancel={() => setModal(false)}
-                                        >
-                                            <div style={{padding: 5}}>
-                                            <ReactInputVerificationCode
-                                            onChange={console.log} length={6}/>
-                                            </div>
-                                        </Modal>
                                     </Card>
                                 </div>
                             </div>

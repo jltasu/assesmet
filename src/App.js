@@ -20,6 +20,7 @@ import Asessment from './Asessments/test/test';
 import ValidatorScreen from './Pages/verification';
 import PrivateRoute from "./common/PrivateRoute";
 import ForgetPassword from "./Pages/forget-password";
+import FullPage from './Asessments/test/test'
 import { loadUser } from './actions/auth';
 import store from './store';
 
@@ -55,8 +56,11 @@ const App = () => {
                         <Route exact path='/register'>
                             <Register />
                         </Route>
-                        <Route exact path='/validator'>
-                            <ValidatorScreen />
+                        <Route path='/validator/:email' 
+                            render={(props) => {
+                                return <ValidatorScreen {...props}></ValidatorScreen>
+                            }
+                        }>
                         </Route>
                         <Route exact path='/forget-password' component={ForgetPassword}/>
                         <Route exact path='/login'>
@@ -74,7 +78,7 @@ const App = () => {
                             )
                         }} />
                         <PrivateRoute exact path='/asessments/reports' component={Reportes} />
-                        <PrivateRoute exact path='/asessments/exam' component={Asessment} />
+                        <Route path='/asessments/exam' component={FullPage} />
                         <PrivateRoute exact path='/asessments/welcome' component={WelcomePage} />
                         <PrivateRoute exact path='/asessments/resume' component={ResumePage} />
                         <PrivateRoute exact path='/asessments/explore' component={Explorer} />
