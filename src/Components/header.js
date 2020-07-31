@@ -25,6 +25,7 @@ const Header = () => {
                     <div className="col-lg-4">
                         <nav className="site-navigation text-left mr-auto " role="navigation">
                             <ul className="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                                <li><Link className="nav-link" to='/videollamada'>llamada</Link></li>
                                 <li><Link className="nav-link" to='/contact'>Contactanos</Link></li>
                                 <li><Link className="nav-link" to='/login'>Iniciar Sesión</Link></li>
                             </ul>

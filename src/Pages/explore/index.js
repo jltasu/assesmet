@@ -40,7 +40,6 @@ const Explorer = () => {
                     <h3>Facultad de Ingenieria y Arquitectura</h3>
                     <Divider />
                     <div className="row no-gutters list-grouped" style={{ paddingBottom: 16 }}>
-                    
                         {data.map((carrera) =>(
                             <CardInfo image={carrera.image} title={carrera.title} description={carrera.description} info={carrera.info}/>
                             ))}

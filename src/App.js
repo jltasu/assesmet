@@ -23,6 +23,7 @@ import ForgetPassword from "./Pages/forget-password";
 import FullPage from './Asessments/test/test'
 import { loadUser } from './actions/auth';
 import store from './store';
+import Videollamada from './Pages/videollamada';
 
 const WelcomePage = lazy(() => import('./Asessments/welcome'));
 const renderLoader = () => {
@@ -69,8 +70,11 @@ const App = () => {
                         <Route exact path='/test-vocacional'>
                             <Testv />
                         </Route>
-                        <Route exact path='/carreras1'>
+                        <Route exact path='/carreras'>
                             <Careers />
+                        </Route>
+                        <Route exact path='/videollamada'>
+                            <Videollamada/>
                         </Route>
                         <Route exact path='/contact' render={() => {
                             return (

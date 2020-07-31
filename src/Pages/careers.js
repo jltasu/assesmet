@@ -4,9 +4,8 @@ import Header from '../Components/header';
 import Footer from '../Components/footer';
 
 const Careers = (props) => {
-    let imageUrl = require(`../assets/imagenes/${props.image}.jpg`)
-    
-    console.log(props.location)
+    // let imageUrl = require(`../assets/imagenes/${props.image}.jpg`) 
+    let imageUrl = require(`../assets/imagenes/ingenieria-ambiental.jpg`)
     return (
         
         <div>

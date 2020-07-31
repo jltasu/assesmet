@@ -6,7 +6,7 @@ const CardInfo = ({ image, title, description, info }) => {
 
     let imageUrl = require(`../assets/imagenes/${image}.jpg`)
     
-    console.log(info)
+    //console.log(info)
 
     return (
         <div className="col-sm-4">
@@ -22,7 +22,7 @@ const CardInfo = ({ image, title, description, info }) => {
                     <div className="list-body">
                         <a
                             className="list-title title ajax h4 font-weight-bold"
-                        ><Link to={{pathname:'/asessments/career', state: `${image}`, texto: `${info}` }} style={{color: 'white'}}>{title}</Link></a>
+                        ><Link to={{pathname:'/asessments/career', state: `${image}`, texto: `${info}`, titulo :`${title}` }} style={{color: 'white'}}>{title}</Link></a>
                         <a className="list-subtitle d-block text-muted subtitle ajax h-1x"
                         >{description}</a>
                     </div>

@@ -7,10 +7,12 @@ import { ArrowLeftOutlined } from '@ant-design/icons';
 const { TabPane } = Tabs;
 
 const Career = (props) => {
-    console.log(props)
+    
+    let titulo = `${props.location.titulo}`
     let texto = `${props.location.texto}`
-    // let imageUrl = require(`../../../assets/imagenes/${props.location.state}.jpg`)
-    let imageUrl = require(`../../../assets/imagenes/ingenieria-de-sistemas.jpg`)
+    console.log(titulo)
+    let imageUrl = require(`../../../assets/imagenes/${props.location.state}.jpg`)
+    // let imageUrl = require(`../../../assets/imagenes/ingenieria-de-sistemas.jpg`)
     return (
         <div>
             <header className="site-navbar site-navbar-target" role="banner">
@@ -24,7 +26,7 @@ const Career = (props) => {
                         </div>
                     </div>
                     <div>
-                        <b><h3 className="h3 text-white" style={{ paddingLeft: 35, paddingTop: 35, fontSize: 35 }}>{"Ingenieria Ambiental"}</h3></b>
+                        <b><h3 className="h3 text-white" style={{ paddingLeft: 35, paddingTop: 35, fontSize: 35 }}>{titulo}</h3></b>
                         <b><h5 className="h5 text-white" style={{ paddingLeft: 35, paddingTop: 35, fontSize: 18 }}>{"Facultad de Ingenieria y Arquitectura"}</h5></b>
                     </div>
                 </div>
