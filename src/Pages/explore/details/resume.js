@@ -3,12 +3,14 @@ import Footer from "../../../Components/footer";
 import { Link } from 'react-router-dom';
 import { Tabs, Empty } from 'antd';
 import { ArrowLeftOutlined } from '@ant-design/icons';
-import Ambiental from '../../imagenes/ambiental.jpg';
-
 
 const { TabPane } = Tabs;
 
-const Career = () => {
+const Career = (props) => {
+    console.log(props)
+    let texto = `${props.location.texto}`
+    // let imageUrl = require(`../../../assets/imagenes/${props.location.state}.jpg`)
+    let imageUrl = require(`../../../assets/imagenes/ingenieria-de-sistemas.jpg`)
     return (
         <div>
             <header className="site-navbar site-navbar-target" role="banner">
@@ -37,11 +39,11 @@ const Career = () => {
                     <div class="site-mobile-menu-body" ></div>
                 </div>
             </div>
-            <div className="ftco-cover-4 overlay" style={{ backgroundImage: `url(${Ambiental})` }}></div>
+            <div className="ftco-cover-4 overlay" style={{ backgroundImage: `url(${imageUrl})` }}></div>
             <div style={{ padding: 25 }} className="container">
                 <Tabs defaultActiveKey="1" centered>
                     <TabPane tab="Presentación" key="1">
-                        <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} style={{color: 'black'}}/>
+                        <p>{texto}</p>
                     </TabPane>
                     <TabPane tab="Campo Ocupacional" key="2">
                         <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} style={{color: 'black'}}/>

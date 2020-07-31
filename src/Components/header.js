@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.css'
 
 const Header = () => {
     return (
@@ -25,7 +26,7 @@ const Header = () => {
                     <div className="col-lg-4">
                         <nav className="site-navigation text-left mr-auto " role="navigation">
                             <ul className="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                                <li><Link className="nav-link" to='/contact'>Contactar</Link></li>
+                                <li><Link className="nav-link" to='/contact'>Contactanos</Link></li>
                                 <li><Link className="nav-link" to='/login'>Iniciar Sesión</Link></li>
                             </ul>
                         </nav>

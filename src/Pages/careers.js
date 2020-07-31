@@ -3,8 +3,12 @@ import ImageHeader from '../Pages/imagenes/hero_1.jpg'
 import Header from '../Components/header';
 import Footer from '../Components/footer';
 
-const Careers = () => {
+const Careers = (props) => {
+    let imageUrl = require(`../assets/imagenes/${props.image}.jpg`)
+    
+    console.log(props.location)
     return (
+        
         <div>
             <Header />
             <div class="site-wrap" id="home-section">
@@ -19,7 +23,7 @@ const Careers = () => {
 
                 <div class="ftco-blocks-cover-1">
                     {/* <div class="ftco-cover-1 overlay" style="background-image: url('images/hero_3.jpg')"> */}
-                    <div className="ftco-cover-1 overlay" style={{ backgroundImage: `url(${ImageHeader})` }}>
+                    <div className="ftco-cover-1 overlay" style={{ backgroundImage: `url(${imageUrl})` }}>
                         <div class="container">
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-lg-6 text-center">

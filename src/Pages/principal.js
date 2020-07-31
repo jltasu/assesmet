@@ -1,5 +1,5 @@
 import React from "react";
-import ImageHeader from '../Pages/imagenes/hero_1.jpg'
+import ImageHeader from '../Pages/imagenes/imagen02.jpg'
 import Header from "../Components/header";
 import Footer from "../Components/footer";
 
@@ -21,7 +21,7 @@ const Principal = () => {
                 <div className="container">
                   <div className="row align-items-center justify-content-center">
                     <div className="col-lg-6 text-center">
-                      <h1>Descubre tu vocacion y potencial</h1>
+                      <h1>Descubre tu vocación y potencial</h1>
                       <p>Te acompañamos en el proceso, con el fin de darte la mejor visión para un futuro exitoso</p>
                     </div>
                   </div>
@@ -32,45 +32,45 @@ const Principal = () => {
               <div className="row justify-content-center text-center mb-5">
                 <div className="col-md-6">
                   <span className="text-primary">Explora tu vocación</span>
-                  <h2 className="mb-4">Porque TÚ eres nuestra prioridad</h2>
+                  <h2 className="mb-4">Porque Tú eres nuestra prioridad</h2>
                   <p> Antes de empezar debes conocer los tres aspectos que te ayudaran a descubrir tu vocación</p>
                 </div>
               </div>
               <div className="row">
                 <div className="col-lg-4">
                   <div className="feature-1">
-                    <img src="images/img_1.jpg" alt="Image" className="img-fluid"></img>
+                    <img src="images/imagen09.jpg" alt="Image" className="img-fluid"></img>
                     <div className="feature-1-contents">
                       <h2>INTERESES</h2>
                       <p>Es la predisposición que sientes por realizar algunas actividades, ligadas a alguna ocupación o profesión, 
                         en lugar de otras. Sin embargo, recuerda que solo puedes preferir algo si es que ya lo conoces. Por eso,
                          debes explorar todas las opciones posibles antes de responder a la pregunta ¿Qué me interesa? Por ejemplo:
                           ¿Qué carrera me interesa?</p>
-                      <p><a href="#" className="more">Learn More</a></p>
+                      
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-4">
                   <div className="feature-1">
-                    <img src="images/img_2.jpg" alt="Image" className="img-fluid"></img>
+                    <img src="images/imagen08.jpg" alt="Image" className="img-fluid"></img>
                     <div className="feature-1-contents">
                       <h2>PREFERENCIAS Y HABILIDADES</h2>
                       <p>Consiste en la selección de un determinado campo académico profesional compuesto de un conjunto de actividades
                          lúdico-laborales que se quieran realidad profesionalmente y para el cual existen una serie de habilidades
                           (aptitudes, conocimientos previos y motivos que llevan a una elección de titulación o profesión futura)</p>
-                      <p><a href="#" className="more">Learn More</a></p>
+                     
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-4">
                   <div className="feature-1">
-                    <img src="images/img_3.jpg" alt="Image" className="img-fluid"></img>
+                    <img src="images/imagen10.jpg" alt="Image" className="img-fluid"></img>
                     <div className="feature-1-contents">
                       <h2>PERSONALIDAD</h2>
                       <p>Cada uno de ustedes es único, por eso actúan, piensan y sienten de forma diferente. Tu personalidad es el conjunto
                          de características que definirá quién eres. Piensa cuáles son los rasgos positivos de tu personalidad y aquellos
                           que deberías mejorar; esto te ayudará a entender quién eres, para luego pensar quién quieres ser.</p>
-                      <p><a href="#" className="more">Learn More</a></p>
+                      
                     </div>
                   </div>
                 </div>
@@ -81,7 +81,7 @@ const Principal = () => {
                 <div className="row justify-content-center text-center mb-5 section-2-title">
                   <div className="col-md-6">
                     <span className="text-primary">Our Features</span>
-                    <h2 className="mb-4">¿Cómo funciona "Vocacional Test"?</h2>
+                    <h2 className="mb-4">¿Cómo funciona "Vocacional Explorer"?</h2>
                     <p>solo debes seguir los siguientes pasos descritos a continuacion</p>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ const Principal = () => {
               <div className="container site-section">
                 <div className="row align-items-stretch feature-2">
                   <div className="col-lg-9 feature-2-img">
-                    <img src="images/hero_1.jpg" alt="Image" className="img-fluid"></img>
+                    <img src="images/personalidad.jpg" alt="Image" className="img-fluid"></img>
                   </div>
                   <div className="col-lg-3 feature-2-contents pl-lg-5">
                     <div className="fixed-content">
@@ -104,7 +104,7 @@ const Principal = () => {
               <div className="container site-section">
                 <div className="row align-items-stretch feature-2">
                   <div className="col-lg-9 feature-2-img order-lg-2">
-                    <img src="images/hero_2.jpg" alt="Image" className="img-fluid"></img>
+                    <img src="images/header.jpg" alt="Image" className="img-fluid"></img>
                   </div>
                   <div className="col-lg-3 feature-2-contents pr-lg-5">
                     <div className="fixed-content">
