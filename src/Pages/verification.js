@@ -5,7 +5,12 @@ import ImageHeader from '../Pages/imagenes/banner.jpg'
 import Footer from '../Components/footer';
 import { Card, Row, Col } from 'antd';
 
-const ValidatorScreen = () => {
+const ValidatorScreen = (props) => {
+
+    let email = props.match.params.email;
+
+    console.log(email)
+
     return (
         <div>
             <Header />
@@ -40,7 +45,7 @@ const ValidatorScreen = () => {
                                                 borderRadius: 12,
                                                 fontSize: 25
                                             }}>
-                                            <ValidationForm />
+                                            <ValidationForm email={email}/>
                                         </Card>
                                     </Col>
                                     <Col xs={2} sm={4} md={6} lg={8} xl={10}>

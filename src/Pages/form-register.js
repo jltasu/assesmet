@@ -8,7 +8,7 @@ var AmazonCognitoIdentity = require('amazon-cognito-identity-js');
 
 const RegisterForm = () => {
 
-    const [confirmed, setConfirmed] = useState(false);
+    const [confirmed, setConfirmed] = useState(true);
 
     const poolData = {
         UserPoolId: 'us-east-2_ZR6tA3cBm',
@@ -18,8 +18,11 @@ const RegisterForm = () => {
     const UserPool = new CognitoUserPool(poolData);
 
     var attributeList = [];
+    var mail = '';
 
     const onFinish = values => {
+
+        mail = values.email;
 
         var dataName = {
             Name: 'name',
@@ -63,7 +66,7 @@ const RegisterForm = () => {
         var attributeBirth = new AmazonCognitoIdentity.CognitoUserAttribute(dataBirth);
         var attributeSchool = new AmazonCognitoIdentity.CognitoUserAttribute(dataSchool);
         var attributeCity = new AmazonCognitoIdentity.CognitoUserAttribute(dataCity);
-         
+
         attributeList.push(attributeLastName);
         attributeList.push(attributeName);
         attributeList.push(attributeEmail);
@@ -73,21 +76,20 @@ const RegisterForm = () => {
         attributeList.push(attributeCity);
 
         UserPool.signUp(
-            values.email, 
+            values.email,
             values.password,
             attributeList,
             null,
             (err, data) => {
-            if(err) console.log(err);
-            console.log(data.userConfirmed)
-            if(data.userConfirmed != true){
-                setConfirmed(false)
-            }
-        })
+                if (err) console.log(err);
+                if (data.userConfirmed != true) {
+                    setConfirmed(false)
+                }
+            })
     }
 
-    if (confirmed == false){
-        return <Redirect to='validator/Diegogo'></Redirect>
+    if (confirmed == false) {
+        return <Redirect to={{ pathname: `validator/${mail}`, state: { email: `${mail}` } }}></Redirect>
     }
 
     return (
@@ -108,9 +110,9 @@ const RegisterForm = () => {
                     }
                 ]}
             >
-                <Input prefix={<UserOutlined className="site-form-item-icon" />} 
-                       placeholder="Nombres" 
-                       style={{borderRadius: 12}}
+                <Input prefix={<UserOutlined className="site-form-item-icon" />}
+                    placeholder="Nombres"
+                    style={{ borderRadius: 12 }}
                 />
             </Form.Item>
             <Form.Item
@@ -122,9 +124,9 @@ const RegisterForm = () => {
                     }
                 ]}
             >
-                <Input prefix={<UserOutlined className="site-form-item-icon" />} 
-                       placeholder="Apellidos" 
-                       style={{borderRadius: 12}}
+                <Input prefix={<UserOutlined className="site-form-item-icon" />}
+                    placeholder="Apellidos"
+                    style={{ borderRadius: 12 }}
                 />
             </Form.Item>
             <Form.Item
@@ -136,9 +138,9 @@ const RegisterForm = () => {
                     }
                 ]}
             >
-                <Input prefix={<UserOutlined className="site-form-item-icon" />} 
-                       placeholder="Correo Electronico" 
-                       style={{borderRadius: 12}}
+                <Input prefix={<UserOutlined className="site-form-item-icon" />}
+                    placeholder="Correo Electronico"
+                    style={{ borderRadius: 12 }}
                 />
             </Form.Item>
             <Form.Item
@@ -153,7 +155,7 @@ const RegisterForm = () => {
                 <Input
                     prefix={<LockOutlined className="site-form-item-icon" />}
                     placeholder="Colegio"
-                    style={{borderRadius: 12}}
+                    style={{ borderRadius: 12 }}
                 />
             </Form.Item>
             <Form.Item
@@ -168,7 +170,7 @@ const RegisterForm = () => {
                 <Input
                     prefix={<LockOutlined className="site-form-item-icon" />}
                     placeholder="Ciudad"
-                    style={{borderRadius: 12}}
+                    style={{ borderRadius: 12 }}
                 />
             </Form.Item>
             <Form.Item
@@ -184,7 +186,7 @@ const RegisterForm = () => {
                     prefix={<LockOutlined className="site-form-item-icon" />}
                     type="date"
                     placeholder="Fecha de Nacimiento"
-                    style={{borderRadius: 12}}
+                    style={{ borderRadius: 12 }}
                 />
             </Form.Item>
             <Form.Item
@@ -199,7 +201,7 @@ const RegisterForm = () => {
                 <Input
                     prefix={<LockOutlined className="site-form-item-icon" />}
                     placeholder="Numero de celular"
-                    style={{borderRadius: 12}}
+                    style={{ borderRadius: 12 }}
                 />
             </Form.Item>
             <Form.Item
@@ -215,7 +217,7 @@ const RegisterForm = () => {
                     prefix={<LockOutlined className="site-form-item-icon" />}
                     type="password"
                     placeholder="Password"
-                    style={{borderRadius: 12}}
+                    style={{ borderRadius: 12 }}
                 />
             </Form.Item>
             <Form.Item>
