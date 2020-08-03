@@ -6,7 +6,7 @@ import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { Card, Row, Col, Form, Input, Button } from 'antd';
 var AmazonCognitoIdentity = require('amazon-cognito-identity-js');
 
-const ForgetPassword = () => {
+export default () => {
 
     const poolData = {
         UserPoolId: 'us-east-2_ZR6tA3cBm',
@@ -140,5 +140,3 @@ const ForgetPassword = () => {
         </div>
     )
 }
-
-export default ForgetPassword;
