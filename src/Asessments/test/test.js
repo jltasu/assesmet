@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import InputBlock from './Question';
 import { connect } from 'react-redux';
 

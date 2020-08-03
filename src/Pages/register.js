@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import ImageHeader from '../Pages/imagenes/banner.jpg'
 import RegisterForm from './form-register';
-import { Card, Modal, Button, Space } from 'antd';
+import { Card} from 'antd';
 import Header from '../Components/header';
 import Footer from '../Components/footer';
-import ReactInputVerificationCode from 'react-input-verification-code';
+//import ReactInputVerificationCode from 'react-input-verification-code';
 
 const Register = () => {
 

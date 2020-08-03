@@ -20,12 +20,11 @@ const Header = () => {
                         <div className="site-logo">
                             <a href="index.html">Vocacional Explorer</a>
                         </div>
-                        <div className="ml-auto toggle-button d-inline-block d-lg-none"><a href="#" className="site-menu-toggle py-5 js-menu-toggle text-white"><span className="icon-menu h3 text-white"></span></a></div>
+                        <div className="ml-auto toggle-button d-inline-block d-lg-none"><a href="/#" className="site-menu-toggle py-5 js-menu-toggle text-white"><span className="icon-menu h3 text-white"></span></a></div>
                     </div>
                     <div className="col-lg-4">
                         <nav className="site-navigation text-left mr-auto " role="navigation">
                             <ul className="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                                <li><Link className="nav-link" to='/videollamada'>llamada</Link></li>
                                 <li><Link className="nav-link" to='/contact'>Contactanos</Link></li>
                                 <li><Link className="nav-link" to='/login'>Iniciar Sesión</Link></li>
                             </ul>

@@ -14,9 +14,9 @@ const Footer = () => {
                             <div className="col-md-4 ml-auto">
                                 <h2 className="footer-heading mb-4">Caracteristicas</h2>
                                 <ul className="list-unstyled">
-                                    <li><a href="#">Terminos y Condiciones</a></li>
-                                    <li><a href="#">Privacidad</a></li>
-                                    <li><a href="#">Contáctanos</a></li>
+                                    <li><a href="/#">Terminos y Condiciones</a></li>
+                                    <li><a href="/#">Privacidad</a></li>
+                                    <li><a href="/#">Contáctanos</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -24,9 +24,9 @@ const Footer = () => {
                     <div className="col-md-4 ml-auto">
                         <h2 className="footer-heading mb-4">Siguenos</h2>
                         <a href="#about-section" className="smoothscroll pl-0 pr-3"><span className="icon-facebook"></span></a>
-                        <a href="#" className="pl-3 pr-3"><span className="icon-twitter"></span></a>
-                        <a href="#" className="pl-3 pr-3"><span className="icon-instagram"></span></a>
-                        <a href="#" className="pl-3 pr-3"><span className="icon-linkedin"></span></a>
+                        <a href="/#" className="pl-3 pr-3"><span className="icon-twitter"></span></a>
+                        <a href="/#" className="pl-3 pr-3"><span className="icon-instagram"></span></a>
+                        <a href="/#" className="pl-3 pr-3"><span className="icon-linkedin"></span></a>
 
                     </div>
                 </div>

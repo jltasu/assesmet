@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageHeader from '../Pages/imagenes/hero_1.jpg'
+// import ImageHeader from '../Pages/imagenes/hero_1.jpg'
 import Header from '../Components/header';
 import Footer from '../Components/footer';
 

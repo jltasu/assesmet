@@ -1,5 +1,5 @@
 import React from "react";
-import { List, Avatar, Progress, Card, Badge } from 'antd';
+import { List, Avatar, Progress, Card } from 'antd';
 
 
 const data = [

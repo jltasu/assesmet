@@ -39,7 +39,7 @@ const Principal = () => {
               <div className="row">
                 <div className="col-lg-4">
                   <div className="feature-1">
-                    <img src="images/imagen09.jpg" alt="Image" className="img-fluid"></img>
+                    <img src="images/imagen09.jpg" alt="Imagen" className="img-fluid"></img>
                     <div className="feature-1-contents">
                       <h2>INTERESES</h2>
                       <p>Es la predisposición que sientes por realizar algunas actividades, ligadas a alguna ocupación o profesión, 
@@ -52,7 +52,7 @@ const Principal = () => {
                 </div>
                 <div className="col-lg-4">
                   <div className="feature-1">
-                    <img src="images/imagen08.jpg" alt="Image" className="img-fluid"></img>
+                    <img src="images/imagen08.jpg" alt="Imagen" className="img-fluid"></img>
                     <div className="feature-1-contents">
                       <h2>PREFERENCIAS Y HABILIDADES</h2>
                       <p>Consiste en la selección de un determinado campo académico profesional compuesto de un conjunto de actividades

@@ -1,7 +1,7 @@
 import React from "react";
-import { Tabs, Layout, Carousel } from "antd";
+import { Tabs, Layout } from "antd";
 import { Link } from "react-router-dom";
-import { Row, Col, Divider, Descriptions } from "antd";
+import { Row, Col, Descriptions } from "antd";
 import { ArrowLeftOutlined } from "@ant-design/icons";
 import Footer from "../../Components/footer";
 import FormContact from "../../Components/formcontact";
@@ -16,7 +16,7 @@ const ProfileContact = () => {
           <div className="row align-items-center position-relative">
             <div className="col-lg-1.5 text-center">
               <div className="site-logo">
-                <a>
+               
                   <Link
                     className="nav-link"
                     to="/asessments/contact"
@@ -24,11 +24,11 @@ const ProfileContact = () => {
                   >
                     <ArrowLeftOutlined />
                   </Link>
-                </a>
+                
               </div>
               <div className="ml-auto toggle-button d-inline-block d-lg-none">
                 <a
-                  href="#"
+                  href="/#"
                   className="site-menu-toggle py-5 js-menu-toggle text-white"
                 >
                   <span className="icon-menu h3 text-white"></span>

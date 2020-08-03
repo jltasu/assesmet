@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button} from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { CognitoUserPool } from 'amazon-cognito-identity-js';
 import { Redirect } from 'react-router-dom';

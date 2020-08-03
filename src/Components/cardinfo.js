@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import ImageHeader from '../assets/imagenes/ingenieria-ambiental.jpg'
+
 
 const CardInfo = ({ image, title, description, info }) => {
 

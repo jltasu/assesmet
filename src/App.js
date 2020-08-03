@@ -16,9 +16,9 @@ import ProfileContact from './Pages/contact/profile'
 import Explorer from './Pages/explore/index';
 import Career from './Pages/explore/details/resume.js';
 import Contactar from './Pages/contact/index';
-import Asessment from './Asessments/test/test';
+// import Asessment from './Asessments/test/test';
 import ValidatorScreen from './Pages/verification';
-import PrivateRoute from "./common/PrivateRoute";
+// import PrivateRoute from "./common/PrivateRoute";
 import ForgetPassword from "./Pages/forget-password";
 import FullPage from './Asessments/test/test'
 import { loadUser } from './actions/auth';

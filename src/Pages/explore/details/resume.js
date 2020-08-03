@@ -20,9 +20,9 @@ const Career = (props) => {
                     <div className="row align-items-center position-relative">
                         <div className="col-lg-1.5 text-center">
                             <div className="site-logo">
-                                <a><Link className="nav-link" to='/asessments/explore' style={{ fontSize: 25 }}><ArrowLeftOutlined /></Link></a>
+                                <a><Link className="nav-link" to="/asessments/explore" style={{ fontSize: 25 }}><ArrowLeftOutlined /></Link></a>
                             </div>
-                            <div className="ml-auto toggle-button d-inline-block d-lg-none"><a href="#" className="site-menu-toggle py-5 js-menu-toggle text-white"><span className="icon-menu h3 text-white"></span></a></div>
+                            <div className="ml-auto toggle-button d-inline-block d-lg-none"><a href="/#" className="site-menu-toggle py-5 js-menu-toggle text-white"><span className="icon-menu h3 text-white"></span></a></div>
                         </div>
                     </div>
                     <div>

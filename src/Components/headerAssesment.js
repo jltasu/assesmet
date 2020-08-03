@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Avatar, Dropdown, Menu } from 'antd';
 
-var AmazonCognitoIdentity = require('amazon-cognito-identity-js');
+// var AmazonCognitoIdentity = require('amazon-cognito-identity-js');
 
 
 const menu = (
@@ -22,20 +22,6 @@ const menu = (
 );
 
 const HeaderAssesment = ({ title }) => {
-
-    const poolData = {  
-        UserPoolId: 'us-east-2_ZR6tA3cBm',
-        ClientId: '3s8ll3pc36qpkki11njbd7pb05'
-    }    
-
-    var userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
-
-    var userData = {
-        Username: 'jenson@upeu.edu.pe',
-        Pool: userPool,
-    };
-
-    var cognitoUser = new AmazonCognitoIdentity.CognitoUser(userData);
 
     return (
         <header className="site-navbar site-navbar-target" role="banner">

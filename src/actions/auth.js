@@ -1,10 +1,10 @@
-import axios from 'axios';
+// import axios from 'axios';
 import { AuthenticationDetails, CognitoUser } from 'amazon-cognito-identity-js'
 import UserPool from '../Pages/userpool';
 import {
-    USER_LOADED,
-    USER_LOADING,
-    AUTH_ERROR,
+    // USER_LOADED,
+    // USER_LOADING,
+    // AUTH_ERROR,
     LOGIN_FAIL,
     LOGIN_SUCCESS
 } from '../actiontype/types';
