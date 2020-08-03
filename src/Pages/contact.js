@@ -32,8 +32,8 @@ const Contact = ({ getLeads, leads }) => {
                         <div class="container">
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-lg-6 text-center">
-                                    <h1>Contact Us</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <h1>Contacte con nosotros</h1>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -46,25 +46,25 @@ const Contact = ({ getLeads, leads }) => {
                                 <form action="#" method="post">
                                     <div class="form-group row">
                                         <div class="col-md-6 mb-4 mb-lg-0">
-                                            <input type="text" class="form-control" placeholder="First name" />
+                                            <input type="text" class="form-control" placeholder="Nombres" />
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="text" class="form-control" placeholder="First name" />
+                                            <input type="text" class="form-control" placeholder="Apellidos" />
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-md-12">
-                                            <input type="text" class="form-control" placeholder="Email address" />
+                                            <input type="text" class="form-control" placeholder="Email" />
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-md-12">
-                                            <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30" rows="10"></textarea>
+                                            <textarea name="" id="" class="form-control" placeholder="Escribe tu mensaje." cols="30" rows="10"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-md-6 mr-auto">
-                                            <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message" />
+                                            <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Enviar Mensage" />
                                         </div>
                                     </div>
                                 </form>
@@ -74,10 +74,10 @@ const Contact = ({ getLeads, leads }) => {
                                     <h3 class="text-black mb-4">Contact Info</h3>
                                     <ul class="list-unstyled footer-link">
                                         <li class="d-block mb-3">
-                                            <span class="d-block text-black">Address:</span>
-                                            <span>34 Street Name, City Name Here, United States</span></li>
-                                        <li class="d-block mb-3"><span class="d-block text-black">Phone:</span><span>+1 242 4942 290</span></li>
-                                        <li class="d-block mb-3"><span class="d-block text-black">Email:</span><span><a href="https://colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="066f686069467f69737462696b676f682865696b">[email&#160;protected]</a></span></li>
+                                            <span class="d-block text-black">Direccion:</span>
+                                            <span>Km 19 Carretera Central, Ñaña, Lurigancho, Lima 15, Perú</span></li>
+                                        <li class="d-block mb-3"><span class="d-block text-black">Celular:</span><span>+1 242 4942 290</span></li>
+                                        <li class="d-block mb-3"><span class="d-block text-black">Email:</span><span><a href="https://colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="066f686069467f69737462696b676f682865696b">admision@upeu.edu.pe</a></span></li>
                                     </ul>
                                 </div>
                             </div>
