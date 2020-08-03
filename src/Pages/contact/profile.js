@@ -75,8 +75,8 @@ const ProfileContact = () => {
             Claremont McKenna College . También es ex presidenta de la Western
             Psychological Association, The Society for the Teaching of
             Psychology y la Division of General Psychology.
+            <br/>
           </TabPane>
-          <br/>
           <TabPane tab="Información" key="2">
             <Descriptions>
               <Descriptions.Item label="Nombre">
