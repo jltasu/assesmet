@@ -91,7 +91,7 @@ const Career = (props) => {
       ></div>
       <div style={{ padding: 25 }} className="container">
         <Tabs defaultActiveKey="1" centered>
-          <TabPane tab="Presentación" key="1" style={{fontSize:'18px'}}>
+          <TabPane tab="Presentación" key="1" style={{fontSize:'15px'}}>
             La carrera de Ingeniería de Sistemas de la Facultad de Ingeniería y
             Arquitectura de la Universidad Peruana Unión, tiene como objetivo
             preparar profesionales con conocimientos científicos en concordancia
@@ -102,7 +102,7 @@ const Career = (props) => {
             tales como el modelamiento de sistemas, diseño, re diseño de
             sistemas aplicados a los sistemas de producción y de servicios.
           </TabPane>
-          <TabPane tab="Campo Laboral" key="2" style={{fontSize:'18px'}}>
+          <TabPane tab="Campo Laboral" key="2" style={{fontSize:'15px'}}>
             El profesional de Ingeniería de Sistemas graduado en la Universidad
             Peruana Unión se encuentra intelectual, actitudinal y
             profesionalmente habilitado para desempeñar los siguientes roles:
@@ -121,7 +121,7 @@ const Career = (props) => {
               )}
             />
           </TabPane>
-          <TabPane tab="Perfil Profesional" key="3" style={{fontSize:'18px'}}>
+          <TabPane tab="Perfil Profesional" key="3" style={{fontSize:'15px'}}>
           El profesional de Ingeniería de Sistemas de la Universidad Peruana Unión, tiene como competencias generales:
           <Divider orientation="left"></Divider>
           <List
