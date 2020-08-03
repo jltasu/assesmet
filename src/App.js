@@ -24,6 +24,7 @@ import FullPage from './Asessments/test/test'
 import { loadUser } from './actions/auth';
 import store from './store';
 import Videollamada from './Pages/videollamada';
+import ParallaxResult from './Pages/reports/parallax-result';
 
 const WelcomePage = lazy(() => import('./Asessments/welcome'));
 const renderLoader = () => {
@@ -83,6 +84,7 @@ const App = () => {
                         }} />
                         <Route exact path='/asessments/reports' component={Reportes} />
                         <Route path='/asessments/exam' component={FullPage} />
+                        <Route exact path='/asessments/results' component={ParallaxResult} />
                         <Route exact path='/asessments/welcome' component={WelcomePage} />
                         <Route exact path='/asessments/resume' component={ResumePage} />
                         <Route exact path='/asessments/explore' component={Explorer} />

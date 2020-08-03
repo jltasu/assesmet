@@ -1,28 +1,62 @@
-import React, { useState } from 'react'
-import Jitsi from 'react-jitsi'
+import React, { useState, useEffect } from 'react';
 
+function Videollamada() {
+  const [loading, setLoading] = useState(true);
+  const containerStyle = {
+    width: '800px',
+    height: '400px',
+  };
 
-const Videollamada = () => {
-    const [displayName, setDisplayName] =useState('')
-    const [roomName, setRoomName] = useState('')
-    const [password, setPassword] = useState('')
-    const [onCall, setOnCall] = useState(false)
-    return onCall
-    ?(
-        <Jitsi
-            roomName = {roomName}
-            displayName = {displayName}
-            password = {password}
-            onAPILoad = { JitsiMeetAPI =>  console.log( '¡ Buenos días a todos! ' )}
+  const jitsiContainerStyle = {
+    display: (loading ? 'none' : 'block'),
+    width: '100%',
+    height: '100%',
+  }
 
-        />
-    ):(
-        <>
-        <h1>Create Meeting</h1>
-        <input type='text' placeholder='Room name' value={roomName} onChange={e => setRoomName(e.target.value)} />
-        <input type='text' placeholder='Your name' value={displayName} onChange={e => setDisplayName(e.target.value)} />
-        <button onClick={() => setOnCall(true)}> Let&apos;s start!</button>
-        </>
-    )
+ function startConference() {
+  try {
+   const domain = 'meet.jit.si';
+   const options = {
+    roomName: 'roomName',
+    height: 400,
+    parentNode: document.getElementById('jitsi-container'),
+    interfaceConfigOverwrite: {
+     filmStripOnly: false,
+     SHOW_JITSI_WATERMARK: false,
+    },
+    configOverwrite: {
+     disableSimulcast: false,
+    },
+   };
+
+   const api = new window.JitsiMeetExternalAPI(domain, options);
+   api.addEventListener('videoConferenceJoined', () => {
+    console.log('Local User Joined');
+    setLoading(false);
+    api.executeCommand('displayName', 'MyName');
+   });
+  } catch (error) {
+   console.error('Failed to load Jitsi API', error);
+  }
+ }
+
+ useEffect(() => {
+  // verify the JitsiMeetExternalAPI constructor is added to the global..
+  if (window.JitsiMeetExternalAPI) startConference();
+  else alert('Jitsi Meet API script not loaded');
+ }, []);
+
+ return (
+  <div
+   style={containerStyle}
+  >
+   {loading && <h1>Cargando</h1>}
+   <div
+    id="jitsi-container"
+    style={jitsiContainerStyle}
+   />
+  </div>
+ );
 }
+
 export default Videollamada;
