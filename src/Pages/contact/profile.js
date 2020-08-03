@@ -89,7 +89,7 @@ const ProfileContact = () => {
               <Descriptions.Item label="Especialidad">
                 Psicologia Educativa
               </Descriptions.Item>
-              <Descriptions.Item label="Direccón">
+              <Descriptions.Item label="Dirección">
                 No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China
               </Descriptions.Item>
             </Descriptions>

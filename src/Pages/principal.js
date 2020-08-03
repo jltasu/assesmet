@@ -169,7 +169,7 @@ const Principal = () => {
                 </div>
               </div>
             </div>
-            <div className="site-section bg-light">
+            {/* <div className="site-section bg-light">
               <div className="container">
                 <div className="row align-items-stretch">
                   <div className="col-lg-3 col-md-6 mb-5">
@@ -222,7 +222,7 @@ const Principal = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <Footer />
       </div>

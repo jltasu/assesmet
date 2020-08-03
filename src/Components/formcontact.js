@@ -64,11 +64,11 @@ class FormContact extends React.Component {
             <Row gutter={16}>
               <Col span={12}>
                 <Form.Item
-                  name="name"
-                  label="Name"
+                  name="Nombre"
+                  label="Nombre"
                   rules={[{ required: true, message: 'porfavor ingrese su nombre' }]}
                 >
-                  <Input placeholder="ingrese su nombre" />
+                  <Input placeholder="Ingrese su nombre" />
                 </Form.Item>
               </Col>
               <Col span={12}>
@@ -77,7 +77,7 @@ class FormContact extends React.Component {
                   label="Apellidos"
                   rules={[{ required: true, message: 'porfavor ingrese sus apellidos' }]}
                 >
-                  <Input placeholder="porfavor ingrese sus apellidos" />
+                  <Input placeholder="Porfavor ingrese sus apellidos" />
                 </Form.Item>
               </Col>
             </Row>
@@ -88,7 +88,7 @@ class FormContact extends React.Component {
                   label="Email"
                   rules={[{ required: true, message: 'Please select an owner' }]}
                 >
-                  <Input placeholder="porfavor ingrese sus apellidos" />
+                  <Input placeholder="Porfavor ingrese su email" />
                 </Form.Item>
               </Col>
               <Col span={12}>
@@ -97,7 +97,7 @@ class FormContact extends React.Component {
                   label="Tipo"
                   rules={[{ required: true, message: 'Please choose the type' }]}
                 >
-                  <Select placeholder="Please choose the type">
+                  <Select placeholder="Seleccionar">
                     <Option value="private">Privado</Option>
                     <Option value="public">Publico</Option>
                   </Select>
@@ -108,10 +108,10 @@ class FormContact extends React.Component {
               <Col span={12}>
                 <Form.Item
                   name="carrera"
-                  label="carrera"
+                  label="Carrera"
                   rules={[{ required: true, message: 'seleccionar carrera' }]}
                 >
-                  <Select placeholder="seleccionar carrera">
+                  <Select placeholder="Seleccionar carrera">
                     <Option value="jack">Ingenieria de sistemas</Option>
                     <Option value="tom">Ingenieria Ambiental</Option>
                   </Select>
@@ -124,6 +124,7 @@ class FormContact extends React.Component {
                   rules={[{ required: true, message: 'Please choose the dateTime' }]}
                 >
                   <DatePicker
+                    placeholder= "Seleccionar Fecha"
                     style={{ width: '100%' }}
                     getPopupContainer={trigger => trigger.parentElement}
                   />
@@ -142,7 +143,7 @@ class FormContact extends React.Component {
                     },
                   ]}
                 >
-                 <Input rows={4} placeholder="please enter url description" />
+                 <Input rows={4} placeholder="Ingrese descripción" />
                 </Form.Item>
               </Col>
             </Row>
