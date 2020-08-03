@@ -59,43 +59,35 @@ class FormContact extends React.Component {
             </div>
           }
         >
-          <Form layout="vertical" >
+          <Form layout="vertical" hideRequiredMark>
             <Row gutter={16}>
               <Col span={12}>
                 <Form.Item
                   name="name"
                   label="Name"
-                  rules={[{ required: true, message: 'Please enter user name' }]}
+                  rules={[{ required: true, message: 'porfavor ingrese su nombre' }]}
                 >
-                  <Input placeholder="Please enter user name" />
+                  <Input placeholder="ingrese su nombre" />
                 </Form.Item>
               </Col>
               <Col span={12}>
                 <Form.Item
-                  name="url"
-                  label="Url"
-                  rules={[{ required: true, message: 'Please enter url' }]}
+                  name="apellidos"
+                  label="apellidos"
+                  rules={[{ required: true, message: 'porfavor ingrese sus apellidos' }]}
                 >
-                  <Input
-                    style={{ width: '100%' }}
-                    addonBefore="http://"
-                    addonAfter=".com"
-                    placeholder="Please enter url"
-                  />
+                  <Input placeholder="porfavor ingrese sus apellidos" />
                 </Form.Item>
               </Col>
             </Row>
             <Row gutter={16}>
               <Col span={12}>
                 <Form.Item
-                  name="owner"
-                  label="Owner"
+                  name="email"
+                  label="Email"
                   rules={[{ required: true, message: 'Please select an owner' }]}
                 >
-                  <Select placeholder="Please select an owner">
-                    <Option value="xiao">Xiaoxiao Fu</Option>
-                    <Option value="mao">Maomao Zhou</Option>
-                  </Select>
+                  <Input placeholder="porfavor ingrese sus apellidos" />
                 </Form.Item>
               </Col>
               <Col span={12}>
@@ -114,13 +106,13 @@ class FormContact extends React.Component {
             <Row gutter={16}>
               <Col span={12}>
                 <Form.Item
-                  name="approver"
-                  label="Approver"
-                  rules={[{ required: true, message: 'Please choose the approver' }]}
+                  name="carrera"
+                  label="carrera"
+                  rules={[{ required: true, message: 'seleccionar carrera' }]}
                 >
-                  <Select placeholder="Please choose the approver">
-                    <Option value="jack">Jack Ma</Option>
-                    <Option value="tom">Tom Liu</Option>
+                  <Select placeholder="seleccionar carrera">
+                    <Option value="jack">Ingenieria de sistemas</Option>
+                    <Option value="tom">Ingenieria Ambiental</Option>
                   </Select>
                 </Form.Item>
               </Col>
@@ -130,7 +122,7 @@ class FormContact extends React.Component {
                   label="DateTime"
                   rules={[{ required: true, message: 'Please choose the dateTime' }]}
                 >
-                  <DatePicker.RangePicker
+                  <DatePicker
                     style={{ width: '100%' }}
                     getPopupContainer={trigger => trigger.parentElement}
                   />
@@ -149,7 +141,7 @@ class FormContact extends React.Component {
                     },
                   ]}
                 >
-                 <Input.TextArea rows={4} placeholder="please enter url description" />
+                 <Input rows={4} placeholder="please enter url description" />
                 </Form.Item>
               </Col>
             </Row>
