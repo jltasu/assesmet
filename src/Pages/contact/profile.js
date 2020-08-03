@@ -5,6 +5,8 @@ import { Row, Col, Descriptions } from "antd";
 import { ArrowLeftOutlined } from "@ant-design/icons";
 import Footer from "../../Components/footer";
 import FormContact from "../../Components/formcontact";
+import { Button, Radio } from "antd";
+import { PhoneFilled } from "@ant-design/icons";
 
 const { TabPane } = Tabs;
 
@@ -16,15 +18,13 @@ const ProfileContact = () => {
           <div className="row align-items-center position-relative">
             <div className="col-lg-1.5 text-center">
               <div className="site-logo">
-               
-                  <Link
-                    className="nav-link"
-                    to="/asessments/contact"
-                    style={{ fontSize: 24, paddingTop: 0.5 }}
-                  >
-                    <ArrowLeftOutlined />
-                  </Link>
-                
+                <Link
+                  className="nav-link"
+                  to="/asessments/contact"
+                  style={{ fontSize: 24, paddingTop: 0.5 }}
+                >
+                  <ArrowLeftOutlined />
+                </Link>
               </div>
               <div className="ml-auto toggle-button d-inline-block d-lg-none">
                 <a
@@ -76,24 +76,37 @@ const ProfileContact = () => {
             Psychological Association, The Society for the Teaching of
             Psychology y la Division of General Psychology.
           </TabPane>
+          <br/>
           <TabPane tab="Información" key="2">
-            <Descriptions >
-              <Descriptions.Item label="UserName">
-                Zhou Maomao
+            <Descriptions>
+              <Descriptions.Item label="Nombre">
+                Diane F. Halpern
               </Descriptions.Item>
-              <Descriptions.Item label="Telephone">
-                1810000000
-              </Descriptions.Item>
-              <Descriptions.Item label="Live">
+              <Descriptions.Item label="Telefono">987456321</Descriptions.Item>
+              <Descriptions.Item label="Vive">
                 Hangzhou, Zhejiang
               </Descriptions.Item>
-              <Descriptions.Item label="Remark">empty</Descriptions.Item>
-              <Descriptions.Item label="Address">
+              <Descriptions.Item label="Especialidad">
+                Psicologia Educativa
+              </Descriptions.Item>
+              <Descriptions.Item label="Direccón">
                 No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China
               </Descriptions.Item>
             </Descriptions>
-            
-            <FormContact />
+            <br />
+            <Row gutter={16}>
+              <Col className="gutter-row" span={6}>
+                <Button type="primary" shape="round">
+                  <Link to="/contact/profile/llamada">
+                    {" "}
+                    <PhoneFilled /> Contactar
+                  </Link>
+                </Button>
+              </Col>
+              <Col className="gutter-row" span={6}>
+                <FormContact />
+              </Col>
+            </Row>
           </TabPane>
         </Tabs>
       </div>
@@ -101,5 +114,4 @@ const ProfileContact = () => {
     </Layout>
   );
 };
-
 export default ProfileContact;

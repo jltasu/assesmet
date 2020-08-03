@@ -25,7 +25,7 @@ const VideoConference = () => {
       await loadJitsiScript();
     }
     const options = {
-      roomName: "chavo",
+      roomName: "Consulta 1",
       parentNode: document.getElementById("jitsi-container-id"),
       interfaceConfigOverwrite: {
         filmStripOnly: false,

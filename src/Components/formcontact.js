@@ -12,7 +12,7 @@ import {
   Select,
   DatePicker
 } from "antd";
-import { PlusOutlined } from "@ant-design/icons";
+import { EditFilled } from "@ant-design/icons";
 
 const { Option } = Select;
 
@@ -34,11 +34,12 @@ class FormContact extends React.Component {
   render() {
     return (
       <>
-        <Button type="primary" onClick={this.showDrawer}>
-          <PlusOutlined /> New account
+      <Button type="primary" shape="round" onClick={this.showDrawer}>
+      <EditFilled /> Solicitar Cita 
         </Button>
+        {/* <Button type="primary"  shape="round"><PhoneFilled /> Contactar</Link></Button> */}
         <Drawer
-          title="Create a new account"
+          title="Registrar Cita"
           width={1000}
           height={1000}
           onClose={this.onClose}
@@ -73,7 +74,7 @@ class FormContact extends React.Component {
               <Col span={12}>
                 <Form.Item
                   name="apellidos"
-                  label="apellidos"
+                  label="Apellidos"
                   rules={[{ required: true, message: 'porfavor ingrese sus apellidos' }]}
                 >
                   <Input placeholder="porfavor ingrese sus apellidos" />
@@ -93,12 +94,12 @@ class FormContact extends React.Component {
               <Col span={12}>
                 <Form.Item
                   name="type"
-                  label="Type"
+                  label="Tipo"
                   rules={[{ required: true, message: 'Please choose the type' }]}
                 >
                   <Select placeholder="Please choose the type">
-                    <Option value="private">Private</Option>
-                    <Option value="public">Public</Option>
+                    <Option value="private">Privado</Option>
+                    <Option value="public">Publico</Option>
                   </Select>
                 </Form.Item>
               </Col>
@@ -119,7 +120,7 @@ class FormContact extends React.Component {
               <Col span={12}>
                 <Form.Item
                   name="dateTime"
-                  label="DateTime"
+                  label="Fecha"
                   rules={[{ required: true, message: 'Please choose the dateTime' }]}
                 >
                   <DatePicker
@@ -133,7 +134,7 @@ class FormContact extends React.Component {
               <Col span={24}>
                 <Form.Item
                   name="description"
-                  label="Description"
+                  label="Descripción"
                   rules={[
                     {
                       required: true,

@@ -16,6 +16,7 @@ import ProfileContact from './Pages/contact/profile'
 import Explorer from './Pages/explore/index';
 import Career from './Pages/explore/details/resume.js';
 import Contactar from './Pages/contact/index';
+import FormContact from './Pages/videollamada'
 // import Asessment from './Asessments/test/test';
 import ValidatorScreen from './Pages/verification';
 // import PrivateRoute from "./common/PrivateRoute";
@@ -91,6 +92,7 @@ const App = () => {
                         <Route exact path='/asessments/career' component={Career} />
                         <Route exact path='/asessments/contact' component={Contactar} />
                         <Route exact path='/contact/profile' component={ProfileContact} />
+                        <Route exact path='/contact/profile/llamada' component={FormContact} />
                         <Route component={Error404} />
                     </Switch>
                 </Suspense>
