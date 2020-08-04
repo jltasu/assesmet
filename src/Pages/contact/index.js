@@ -30,7 +30,7 @@ const Contactar = () => {
                                 bordered={true}
                                 cover={<img alt="example" src="https://previews.123rf.com/images/seventyfour74/seventyfour741708/seventyfour74170800167/83829695-retrato-de-hermosa-mujer-psic%C3%B3loga-con-gafas-posando-con-portapapeles-en-la-oficina-de-terapia-c%C3%B3moda-sonr.jpg" />}
                                 >
-                                <Meta title="Psych. Elma Mutt" description="Psicologa Educativa" />
+                                <Meta title="Psi. Diane F. Halpern" description="Psicologa Educativa" />
                             </Card>
                             </Link>
                         </Col>

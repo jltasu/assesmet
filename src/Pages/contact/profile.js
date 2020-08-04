@@ -39,14 +39,10 @@ const ProfileContact = () => {
           <Row gutter={16}>
             <Col className="gutter-row" span={6}>
               <div className="h3 text-white" style={{ fontSize: 34 }}>
-                {"Psych. Elma Mutt"}
+                {"Psi. Diane Halpern"}
               </div>
             </Col>
           </Row>
-          {/* <div>
-                        <b><h3 className="h3 text-white" style={{ paddingLeft: 35, paddingTop: 35, fontSize: 35 }}>{"Psych. Elma Mutt"}</h3></b>
-                        <b><h5 className="h5 text-white" style={{ paddingLeft: 35, paddingTop: 35, fontSize: 18 }}>{"Psicologia Educativa"}</h5></b>
-                    </div> */}
         </div>
       </header>
       <div className="site-wrap" id="home-section">

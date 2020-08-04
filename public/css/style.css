@@ -1703,7 +1703,7 @@ input[type="radio"].toggle:checked + label:after {
   border-color: blue !important;
 }
 .upform input, select, textarea {
-  background-color: #000 !important;
+  background-color: #FFF !important;
   color: #FFF;
 }
 .upform {

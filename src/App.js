@@ -3,8 +3,6 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from 'react-loader-spinner';
 import Contact from './Pages/contact';
-import Testv from './Pages/testv';
-import Careers from './Pages/careers';
 import '../src/App.css';
 import ResumePage from './Asessments/resume';
 import Reportes from './Pages/reports/index';
@@ -27,6 +25,8 @@ const Login = lazy(() => import('./Pages/login'));
 const Register = lazy(() => import('./Pages/register'));
 const Error404 = lazy(() => import('./Components/404/404'));
 const ForgetPassword = lazy(() => import('./Pages/forget-password'));
+const Testv = lazy(() => import('./Pages/testv'));
+const Careers = lazy(() => import('./Pages/careers'));
 
 const renderLoader = () => {
     return (
