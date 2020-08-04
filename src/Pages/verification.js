@@ -9,8 +9,6 @@ const ValidatorScreen = (props) => {
 
     let email = props.match.params.email;
 
-    console.log(email)
-
     return (
         <div>
             <Header />

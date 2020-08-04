@@ -69,6 +69,7 @@
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "html-webpack-plugin": "^4.3.0"
+    "html-webpack-plugin": "^4.3.0",
+    "webpack-pwa-manifest": "^4.2.0"
   }
 }

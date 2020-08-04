@@ -3,12 +3,6 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from 'react-loader-spinner';
 import Contact from './Pages/contact';
-import Principal from './Pages/principal';
-import Error404 from './Components/404/404';
-import Register from './Pages/register';
-import Login from './Pages/login';
-import Testv from './Pages/testv';
-import Careers from './Pages/careers';
 import '../src/App.css';
 import ResumePage from './Asessments/resume';
 import Reportes from './Pages/reports/index';
@@ -19,8 +13,12 @@ import Contactar from './Pages/contact/index';
 import FormContact from './Pages/videollamada'
 // import Asessment from './Asessments/test/test';
 import ValidatorScreen from './Pages/verification';
+<<<<<<< HEAD
 // import PrivateRoute from "./common/PrivateRoute";
 import ForgetPassword from "./Pages/forget-password";
+=======
+import PrivateRoute from "./common/PrivateRoute";
+>>>>>>> 4ee67a8227d0db348507cf01c66671831e1f8423
 import FullPage from './Asessments/test/test'
 import { loadUser } from './actions/auth';
 import store from './store';
@@ -28,6 +26,14 @@ import Videollamada from './Pages/videollamada';
 import ParallaxResult from './Pages/reports/parallax-result';
 
 const WelcomePage = lazy(() => import('./Asessments/welcome'));
+const Principal = lazy(() => import('./Pages/principal'));
+const Login = lazy(() => import('./Pages/login'));
+const Register = lazy(() => import('./Pages/register'));
+const Error404 = lazy(() => import('./Components/404/404'));
+const ForgetPassword = lazy(() => import('./Pages/forget-password'));
+const Testv = lazy(() => import('./Pages/testv'));
+const Careers = lazy(() => import('./Pages/careers'));
+
 const renderLoader = () => {
     return (
         <div className='container text-center' style={{paddingTop: 250}}>

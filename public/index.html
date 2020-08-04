@@ -8,19 +8,33 @@
       href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&amp;display=swap"
       rel="stylesheet"
     />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="stylesheet" href="fonts/icomoon/style.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
-    <link rel="stylesheet" href="css/aos.css" />
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <div id="root"></div>
-    <script src='https://meet.jit.si/external_api.js'></script>
+    <noscript>
+      <h3>This app needs javascript to work, contact us.</h3>
+    </noscript>
+    <script>
+      if('servicerWorker' in navigator){
+        window.addEventListener('load', function(){
+          navigator.serviceWorker.register('../src/serviceWorker.js')
+          .then(registration => {
+            console.log('SW registrado');
+          })
+          .catch(registrationError => {
+            console.log('SW error', registrationError);
+          })
+        })
+      }
+    </script>
   </body>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>

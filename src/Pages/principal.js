@@ -3,7 +3,7 @@ import ImageHeader from '../Pages/imagenes/imagen02.jpg'
 import Header from "../Components/header";
 import Footer from "../Components/footer";
 
-const Principal = () => {
+export default () => {
     return (
       <div>
           <Header />
@@ -228,4 +228,3 @@ const Principal = () => {
       </div>
     );
 }
-export default Principal;

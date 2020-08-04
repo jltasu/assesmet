@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ImageHeader from '../Pages/imagenes/banner.jpg'
 import RegisterForm from './form-register';
+<<<<<<< HEAD
 import { Card} from 'antd';
 import Header from '../Components/header';
 import Footer from '../Components/footer';
@@ -9,7 +10,13 @@ import Footer from '../Components/footer';
 const Register = () => {
 
     const [modal, setModal] = useState(false)
+=======
+import { Card } from 'antd';
+import Header from '../Components/header';
+import Footer from '../Components/footer';
+>>>>>>> 4ee67a8227d0db348507cf01c66671831e1f8423
 
+export default () => {
     return (
         <div>
             <Header />
@@ -52,5 +59,3 @@ const Register = () => {
         </div>
     );
 }
-
-export default Register

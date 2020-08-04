@@ -3,7 +3,7 @@ import ImageHeader from '../Pages/imagenes/imagen02.jpg'
 import Header from '../Components/header';
 import Footer from '../Components/footer';
 
-const Testv = () => {
+export default () => {
     return (
         <div>
             <Header />
@@ -33,5 +33,3 @@ const Testv = () => {
         </div>
     )
 }
-
-export default Testv
